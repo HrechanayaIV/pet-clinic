@@ -1,5 +1,5 @@
 package com.hrechana.petclinic.model;
 
-public class Vet extends Persen{
+public class Vet extends Person {
 
 }
