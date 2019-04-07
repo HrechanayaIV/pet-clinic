@@ -33,6 +33,7 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <goals>install</goals>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
                     <checkModificationExcludes>
                         <checkModificationExclude>pom.xml</checkModificationExclude>
                     </checkModificationExcludes>
@@ -42,8 +43,10 @@
     </build>
   
     <scm>
+        <connection>scm:git:git@github.com:HrechanayaIV/pet-clinic.git</connection>
         <developerConnection>scm:git:git@github.com:HrechanayaIV/pet-clinic.git</developerConnection>
-      <tag>pet-clinic-0.0.1</tag>
+        <url>git@github.com:HrechanayaIV/pet-clinic.git</url>
+        <tag>HEAD</tag>
   </scm>
 
 </project>
