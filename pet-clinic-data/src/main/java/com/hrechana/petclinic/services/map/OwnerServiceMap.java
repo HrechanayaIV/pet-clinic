@@ -1,11 +1,16 @@
 package com.hrechana.petclinic.services.map;
 
 import com.hrechana.petclinic.model.Owner;
-import com.hrechana.petclinic.services.CrudService;
+import com.hrechana.petclinic.services.OwnerService;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
+    }
+
     @Override
     public Set<Owner> findAll() {
         return super.findAll();
